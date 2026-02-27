@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Admin Panel — MegaDraw India</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔐</text></svg>">
+</head>
+
+<body>
+    <div class="bg-animation"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="navbar-inner">
+            <a href="/" class="logo">
+                <div class="logo-icon">🔐</div>
+                <span class="logo-text">MegaDraw Admin</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">← Back to Site</a></li>
+                <li><a href="#" id="logoutBtn" style="display:none;" class="nav-cta" onclick="logout()">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Login View -->
+    <div class="admin-login-container" id="loginView">
+        <div class="admin-login-box">
+            <h2>🔐 Admin Login</h2>
+            <p>Enter your credentials to access the dashboard</p>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label class="form-label" for="adminUser">Username</label>
+                    <input type="text" class="form-input" id="adminUser" placeholder="Enter admin username" required
+                        autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="adminPass">Password</label>
+                    <input type="password" class="form-input" id="adminPass" placeholder="Enter admin password" required
+                        autocomplete="current-password">
+                </div>
+                <button type="submit" class="btn btn-primary form-submit" id="loginBtn">
+                    Login to Dashboard
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard View -->
+    <div class="admin-dashboard" id="dashboardView" style="display:none;">
+        <div class="container">
+            <div class="admin-header">
+                <h1 class="admin-title">📊 Dashboard</h1>
+                <button class="btn btn-secondary" onclick="refreshData()">🔄 Refresh</button>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid" id="statsGrid">
+                <div class="stat-card indigo">
+                    <div class="stat-label">Total Registrations</div>
+                    <div class="stat-value" id="statTotal">0</div>
+                </div>
+                <div class="stat-card gold">
+                    <div class="stat-label">Winners</div>
+                    <div class="stat-value" id="statWinners">0</div>
+                </div>
+                <div class="stat-card green">
+                    <div class="stat-label">Slots Remaining</div>
+                    <div class="stat-value" id="statSlots">10</div>
+                </div>
+                <div class="stat-card rose">
+                    <div class="stat-label">Non-Winners</div>
+                    <div class="stat-value" id="statNonWinners">0</div>
+                </div>
+            </div>
+
+            <!-- Registrations Table -->
+            <div class="table-container">
+                <div class="table-header">
+                    <h3 class="table-title">All Registrations</h3>
+                    <input type="text" class="search-input" id="searchInput"
+                        placeholder="🔍 Search by name, phone, or Aadhaar...">
+                </div>
+                <div style="overflow-x: auto;">
+                    <table class="data-table" id="registrationsTable">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Aadhaar</th>
+                                <th>Status</th>
+                                <th>Prize</th>
+                                <th>Registered At</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td colspan="7" style="text-align: center; padding: 40px; color: var(--text-muted);">
+                                    Loading registrations...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="/js/admin.js"></script>
+</body>
+
+</html>

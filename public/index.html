@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="India's Biggest Lucky Draw Contest — Register now with your phone number and Aadhaar card. First 10 participants win cash prizes up to ₹50,000!">
+  <title>MegaDraw India — Win Up To ₹50,000 Cash Prize</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎰</text></svg>">
+</head>
+<body>
+  <div class="bg-animation"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="/" class="logo">
+        <div class="logo-icon">🎰</div>
+        <span class="logo-text">MegaDraw</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#prizes">Prizes</a></li>
+        <li><a href="#winners">Winners</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#register" class="nav-cta">Register Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Contest is Live — Limited Slots!
+    </div>
+    <h1>
+      India's Biggest<br>
+      <span class="gold">Lucky Draw Contest</span>
+    </h1>
+    <p class="hero-subtitle">
+      Be among the first 10 to register and win cash prizes up to <strong>₹50,000</strong>. 
+      It's free, instant, and verified through Aadhaar — no hidden charges.
+    </p>
+    <div class="hero-cta-row">
+      <a href="#register" class="btn btn-primary">🎯 Register & Win</a>
+      <a href="#how-it-works" class="btn btn-secondary">How It Works</a>
+    </div>
+    <div class="live-counter" id="liveCounter">
+      <div class="counter-box highlight">
+        <div class="counter-number" id="slotsLeft">—</div>
+        <div class="counter-label">Slots Left</div>
+      </div>
+      <div class="counter-box">
+        <div class="counter-number" id="totalRegistered">—</div>
+        <div class="counter-label">Registered</div>
+      </div>
+      <div class="counter-box">
+        <div class="counter-number">₹1.3L</div>
+        <div class="counter-label">Total Prizes</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prize Section -->
+  <section class="section" id="prizes">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-tag">💰 Cash Prizes</div>
+        <h2 class="section-title">Prize Pool Worth ₹1,30,000</h2>
+        <p class="section-desc">First 10 verified registrants automatically win. No draws, no waiting — instant winners.</p>
+      </div>
+      <div class="prize-grid fade-in">
+        <div class="prize-card top-prize">
+          <div class="prize-rank">1</div>
+          <div class="prize-amount">₹50,000</div>
+          <div class="prize-label">Grand Prize — 1st Winner</div>
+        </div>
+        <div class="prize-card top-prize">
+          <div class="prize-rank">2</div>
+          <div class="prize-amount">₹25,000</div>
+          <div class="prize-label">Runner Up — 2nd Winner</div>
+        </div>
+        <div class="prize-card">
+          <div class="prize-rank">3</div>
+          <div class="prize-amount">₹15,000</div>
+          <div class="prize-label">3rd Winner</div>
+        </div>
+        <div class="prize-card">
+          <div class="prize-rank">4</div>
+          <div class="prize-amount">₹10,000</div>
+          <div class="prize-label">4th Winner</div>
+        </div>
+        <div class="prize-card">
+          <div class="prize-rank">5</div>
+          <div class="prize-amount">₹10,000</div>
+          <div class="prize-label">5th Winner</div>
+        </div>
+        <div class="prize-card">
+          <div class="prize-rank">6</div>
+          <div class="prize-amount">₹5,000</div>
+          <div class="prize-label">6th Winner</div>
+        </div>
+        <div class="prize-card">
+          <div class="prize-rank">7</div>
+          <div class="prize-amount">₹5,000</div>
+          <div class="prize-label">7th Winner</div>
+        </div>
+        <div class="prize-card">
+          <div class="prize-rank">8</div>
+          <div class="prize-amount">₹5,000</div>
+          <div class="prize-label">8th Winner</div>
+        </div>
+        <div class="prize-card">
+          <div class="prize-rank">9</div>
+          <div class="prize-amount">₹3,000</div>
+          <div class="prize-label">9th Winner</div>
+        </div>
+        <div class="prize-card">
+          <div class="prize-rank">10</div>
+          <div class="prize-amount">₹2,000</div>
+          <div class="prize-label">10th Winner</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Winners Section -->
+  <section class="section" id="winners">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-tag">🏆 Winners Board</div>
+        <h2 class="section-title">Verified Winners</h2>
+        <p class="section-desc">Real people winning real cash. See who's already claimed their prize.</p>
+      </div>
+      <div class="winners-bar fade-in" id="winnersBoard">
+        <div class="winners-bar-header">
+          <span>🏅</span> Winners List (Live)
+        </div>
+        <div class="winners-list" id="winnersList">
+          <div class="no-winners">No winners yet. Be the first to register and win!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-tag">📋 Process</div>
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-desc">Three simple steps to claim your prize. No tricks, no gimmicks.</p>
+      </div>
+      <div class="steps-grid fade-in">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3 class="step-title">Fill Your Details</h3>
+          <p class="step-desc">Enter your full name, 10-digit mobile number, and 12-digit Aadhaar number in the form below.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3 class="step-title">Instant Verification</h3>
+          <p class="step-desc">Your details are verified instantly. If you're within the first 10, you win! No waiting period needed.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3 class="step-title">Claim Your Prize</h3>
+          <p class="step-desc">Winners receive their cash prize directly via bank transfer within 7 business days of verification.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Form -->
+  <section class="section register-section" id="register">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-tag">🎯 Enter Now</div>
+        <h2 class="section-title">Register to Win</h2>
+        <p class="section-desc">Fill in your details below. If you're within the first 10, you win instantly!</p>
+      </div>
+      <div class="form-container fade-in" id="registrationForm">
+        <form id="registerForm" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="fullName">Full Name</label>
+            <input type="text" class="form-input" id="fullName" name="name" placeholder="Enter your full name as per Aadhaar" autocomplete="name" required>
+            <div class="form-error" id="nameError">Please enter a valid name (minimum 2 characters)</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phoneNumber">Mobile Number</label>
+            <input type="tel" class="form-input" id="phoneNumber" name="phone" placeholder="10-digit mobile number (e.g., 9876543210)" maxlength="10" autocomplete="tel" required>
+            <div class="form-hint">Indian mobile number starting with 6, 7, 8, or 9</div>
+            <div class="form-error" id="phoneError">Enter a valid 10-digit Indian mobile number</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="aadharNumber">Aadhaar Number</label>
+            <input type="text" class="form-input" id="aadharNumber" name="aadhar" placeholder="12-digit Aadhaar number (e.g., 1234 5678 9012)" maxlength="14" required>
+            <div class="form-hint">Your 12-digit Aadhaar number for identity verification</div>
+            <div class="form-error" id="aadharError">Enter a valid 12-digit Aadhaar number</div>
+          </div>
+          <label class="form-checkbox">
+            <input type="checkbox" id="agreeTerms" required>
+            <span>I agree to the <a href="#" style="color: var(--indigo-500);">Terms & Conditions</a> and consent to identity verification using my Aadhaar details. My data will be kept confidential.</span>
+          </label>
+          <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
+            🎯 Register & Check My Luck
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-text">© 2024 MegaDraw India. All rights reserved. Contest valid for Indian residents only.</p>
+    <ul class="footer-links">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="/admin">Admin</a></li>
+    </ul>
+  </footer>
+
+  <!-- Result Modal -->
+  <div class="modal-overlay" id="resultModal">
+    <div class="modal">
+      <div class="modal-icon" id="modalIcon">🎉</div>
+      <h3 class="modal-title" id="modalTitle">Congratulations!</h3>
+      <div class="modal-prize" id="modalPrize" style="display:none;"></div>
+      <p class="modal-message" id="modalMessage">You have won!</p>
+      <button class="btn btn-primary" onclick="closeModal()">Got It!</button>
+    </div>
+  </div>
+
+  <!-- Confetti Container -->
+  <div class="confetti-container" id="confettiContainer"></div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

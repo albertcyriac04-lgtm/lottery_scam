@@ -1,0 +1,16 @@
+{
+  "name": "lucky-draw-india",
+  "version": "1.0.0",
+  "description": "Lucky Draw Contest - Win Cash Prizes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-session": "^1.18.0"
+  }
+}
